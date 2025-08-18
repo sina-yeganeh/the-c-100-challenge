@@ -7,7 +7,7 @@ Feel free to pull-request any changes, from codes to this `README`! And if you f
 1. [**Minimal Hex Dumper**](./challenges/01_pro_warm_up/01_minimal_hex_dumper/src/main.c): Print a file in hex, with offset addresses and ASCII alongside.  
 2. [**Command-line Parser**](./challenges/01_pro_warm_up/02_command_line_parser/src/main.c): Read arguments with `getopt` (or manually), handling short/long switches.  
 3. [**Safe Reader**](./challenges/01_pro_warm_up/03_safe_reader/src/main.c): Replace `gets`/`scanf("%s")` with a looped `read` that enforces buffer limits.  
-4. **Accurate Timer**: Measure the runtime of a function using `clock_gettime` (ns precision).  
+4. [**Accurate Timer**](./challenges/01_pro_warm_up/04_accurate_timer/src/main.c): Measure the runtime of a function using `clock_gettime` (ns precision).  
 5. **Single-file CRC32**: Compute CRC32 for an input file and check against a reference value.  
 6. **Lightweight INI Parser**: Convert a `.ini` file into a key=value map.  
 7. **Rotating Log**: A log file that rotates after reaching X KB (rename + new file).  
