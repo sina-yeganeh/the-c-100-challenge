@@ -9,27 +9,16 @@
 #include <stdlib.h>
 
 #define MAX 10000
-// Is this format standard for writing help messages?
-#define HELP_MESSAGE \
-"Minicat - a mini version of \"cat\".\n" \
-"USAGE:\n" \
-"  --help: print this message.\n" \
-"  -i, --input=<file_name>: Select the file for concatenate.\n" \
-"  -t, --top: print first 10 line.\n" \
-"  -l, --line: add number line.\n"
 
 void print_help() {
-  printf(HELP_MESSAGE);
-}
-
-// Instead of this shit, you can use `isprint`
-// in the `ctype` libaray.
-bool is_printable(char c) {
-  if (c < 26 || c > 126) {
-    return false;
-  }
-
-  return true;
+  printf(
+    "Minicat - a mini version of \"cat\".\n"
+    "USAGE:\n"
+    "  --help: print this message.\n" 
+    "  -i, --input=<file_name>: Select the file for concatenate.\n" 
+    "  -t, --top: print first 10 line.\n" 
+    "  -l, --line: add number line.\n"
+  );
 }
 
 bool read_file(char path[], bool is_top, bool lined) {
@@ -98,6 +87,6 @@ int main(int argc, char *argv[]) {
   }
 
   read_file(file_name, is_top, lined); 
-  
+
   return 0;
 }
